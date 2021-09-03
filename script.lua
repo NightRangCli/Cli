@@ -1,4 +1,11 @@
-tdcli = require 'tdcli'
+redis = dofile("./libs/redis.lua").connect("127.0.0.1", 6379)
+serpent = dofile("./libs/serpent.lua")  
+JSON  = dofile("./libs/dkjson.lua")
+json = dofile("./libs/JSON.lua")
+http = require("socket.http")
+URL = dofile("./libs/url.lua")
+https = require("ssl.https")
+tdcli = require("tdcli")
 function vardump(value, depth, key)
 local linePrefix = ''
 local spaces = ''
