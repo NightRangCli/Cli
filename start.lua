@@ -17,7 +17,7 @@ config = io.open("./libs/config.lua", 'w')
 config:write("token = '" ..token_Bot.."'\n\nsudos = "..Sudo_Bot)
 config:close()
 os.execute('rm -fr ../.telegram-cli')
-os.execute('./tdbot -p cli --login --bot='..token_Bot)
+os.execute('./libs/tdbot -p cli --login --bot='..token_Bot)
 else 
 print('\n\27[1;31mThe Id was not Saved\n\27[0;39;49m')
 os.exit()
@@ -28,7 +28,7 @@ os.exit()
 end 
 else 
 os.execute('rm -fr ../.telegram-cli')
-os.execute('./tdbot -p cli --login --bot='..token)
+os.execute('./libs/tdbot -p cli --login --bot='..token)
 end
 else 
 print("\27[1;31mThis server is not supported\27[0;39;49m")
