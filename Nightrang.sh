@@ -15,7 +15,10 @@ install() {
 		sudo apt-get install libstdc++6 -y
 		sudo apt-get install lua-lgi -y
 		sudo apt-get install libnotify-dev -y
-        sudo apt-get install libconfig++9v5
+                sudo apt-get install libconfig++9v5
+		wget --no-check-certificate https://valtman.name/files/telegram-bot-180116-nightly-linux
+		mv telegram-bot-180116-nightly-linux tdbot
+		chmod +x tdbot
 		cd ..
 		chmod +x libs
 		chmod +x Nightrang.sh
