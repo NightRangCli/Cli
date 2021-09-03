@@ -45,11 +45,11 @@ EOF
 printf "\nConfig Has Been Saved.\n"
 }
 Nightrang() {
-./libs/tdbot | grep -v "{"
+./tdbot | grep -v "{"
 }
 
 Nightrangapi() {
-./libs/tdbot -p cli --login --bot=${1}
+./tdbot -p cli --login --bot=${1}
 }
 
 case $1 in
